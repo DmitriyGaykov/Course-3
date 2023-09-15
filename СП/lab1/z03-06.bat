@@ -1,4 +1,4 @@
-echo off
+@echo off
 cls
 chcp 65001 > nul 2>&1
 echo -- строка параметров: %*

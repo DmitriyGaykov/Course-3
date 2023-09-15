@@ -1,4 +1,4 @@
-echo off
+@echo off
 cls
 echo --1st param: %1
 echo --2nd param: %2
