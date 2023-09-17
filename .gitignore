@@ -4,6 +4,9 @@
 /Тестирование/lab1/I-can-win/
 /**/*.unity
 
+/**/*.rar
+/**/*.zip
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
