@@ -1,0 +1,887 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.8f1 (b5eafc012955) revision 11922172'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 7521 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Р‘СЂРµРґ РІСЃСЏРєРёР№\UnityHub\2022.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Course3/РљРњРЎ/Lab1
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60549
+Successfully changed project path to: D:/Course3/РљРњРЎ/Lab1
+D:/Course3/РљРњРЎ/Lab1
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18120] Host "[IP] 172.20.240.1 [Port] 0 [Flags] 2 [Guid] 537934527 [EditorId] 537934527 [Version] 1048832 [Id] WindowsEditor(7,Dima) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [18120] Host "[IP] 172.20.240.1 [Port] 0 [Flags] 2 [Guid] 537934527 [EditorId] 537934527 [Version] 1048832 [Id] WindowsEditor(7,Dima) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 13.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.8f1 (b5eafc012955)
+[Subsystems] Discovering subsystems at path D:/Р‘СЂРµРґ РІСЃСЏРєРёР№/UnityHub/2022.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Course3/РљРњРЎ/Lab1/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x164c)
+    Vendor:   ATI
+    VRAM:     3760 MB
+    Driver:   27.20.21030.1005
+Initialize mono
+Mono path[0] = 'D:/Р‘СЂРµРґ РІСЃСЏРєРёР№/UnityHub/2022.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Р‘СЂРµРґ РІСЃСЏРєРёР№/UnityHub/2022.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Р‘СЂРµРґ РІСЃСЏРєРёР№/UnityHub/2022.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Р‘СЂРµРґ РІСЃСЏРєРёР№/UnityHub/2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Р‘СЂРµРґ РІСЃСЏРєРёР№/UnityHub/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008752 seconds.
+- Loaded All Assemblies, in  0.793 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.573 seconds
+Domain Reload Profiling: 1367ms
+	BeginReloadAssembly (204ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (126ms)
+	LoadAllAssembliesAndSetupDomain (368ms)
+		LoadAssemblies (204ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (363ms)
+			TypeCache.Refresh (360ms)
+				TypeCache.ScanAssembly (333ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (574ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (432ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (16ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (286ms)
+			ProcessInitializeOnLoadMethodAttributes (101ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.224 seconds
+Refreshing native plugins compatible for Editor in 2.85 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.044 seconds
+Domain Reload Profiling: 2269ms
+	BeginReloadAssembly (305ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (753ms)
+		LoadAssemblies (559ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (365ms)
+			TypeCache.Refresh (300ms)
+				TypeCache.ScanAssembly (266ms)
+			ScanForSourceGeneratedMonoScriptInfo (53ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1045ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (732ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (569ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 4.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3531.
+Memory consumption went from 114.1 MB to 114.0 MB.
+Total: 5.317300 ms (FindLiveObjects: 0.353800 ms CreateObjectMapping: 0.156100 ms MarkObjects: 4.553500 ms  DeleteObjects: 0.252100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1090.222914 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7344865a3be4a4a7be90a9eadc0033d1') in 0.003380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.420594 seconds.
+  path: Assets/Scenes/Ex2.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ex2.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e967195360bf21852e229ab02d56dba') in 0.000806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 12.706508 seconds.
+  path: Assets/Scenes/Ex1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ex1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cbe2c8cbeea98c1b692f3809c2b9d9c') in 0.000886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 273.542839 seconds.
+  path: Assets/board.mat
+  artifactKey: Guid(f83d390d3f5420146b39c05018bd5d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/board.mat using Guid(f83d390d3f5420146b39c05018bd5d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fde9f1259ce3588fdc6256dd4bafa8c') in 0.404189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 95.970835 seconds.
+  path: Assets/Textures
+  artifactKey: Guid(0ec85621150eaf84689537206a59a24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures using Guid(0ec85621150eaf84689537206a59a24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dbcd8bd4b5896d7a58437a9707f9a45') in 0.001113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.042997 seconds.
+  path: Assets/Textures/board.jpg
+  artifactKey: Guid(87c0980d022e15146a8fa6d9efc19ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/board.jpg using Guid(87c0980d022e15146a8fa6d9efc19ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d0298fed8df475af938ec0d1e12157') in 0.074575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 94.780404 seconds.
+  path: Packages/com.unity.timeline/Editor/Utilities/Clipboard.cs
+  artifactKey: Guid(b57629d89799e004182564256307b0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/Utilities/Clipboard.cs using Guid(b57629d89799e004182564256307b0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c30dd143c361f535cb8c3d2094161aa') in 0.001391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 101.637805 seconds.
+  path: Assets/Materials/board.mat
+  artifactKey: Guid(0a751aa88229c014e98c7e868b687776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/board.mat using Guid(0a751aa88229c014e98c7e868b687776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9e4b65c7038896fa0d7ad4101c835b') in 0.033394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 50.840720 seconds.
+  path: Assets/board.mat
+  artifactKey: Guid(f83d390d3f5420146b39c05018bd5d65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/board.mat using Guid(f83d390d3f5420146b39c05018bd5d65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13e55d555a64785952d90ab1e1ae603e') in 0.250999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Textures/board.jpg
+  artifactKey: Guid(87c0980d022e15146a8fa6d9efc19ab9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/board.jpg using Guid(87c0980d022e15146a8fa6d9efc19ab9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '00f89ef49be1b566ef8404b69a98ea52') in 0.075136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 34.473992 seconds.
+  path: Assets/Textures/stone.jpg
+  artifactKey: Guid(2ea954fd031e05248830ecaf0960237e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/stone.jpg using Guid(2ea954fd031e05248830ecaf0960237e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55bc49846a2768c3587174e811116b41') in 0.030383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.922204 seconds.
+  path: Assets/Textures/stone.jpg
+  artifactKey: Guid(2ea954fd031e05248830ecaf0960237e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/stone.jpg using Guid(2ea954fd031e05248830ecaf0960237e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '12b034263a390bdb957cd689bce98809') in 0.078573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.677012 seconds.
+  path: Assets/Materials/stone.mat
+  artifactKey: Guid(1d747ae06f8903f4d890cb777b12c820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone.mat using Guid(1d747ae06f8903f4d890cb777b12c820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e7a1891ccb10565709b873294acf89c') in 0.030294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.925686 seconds.
+  path: Assets/Materials/stone.mat
+  artifactKey: Guid(1d747ae06f8903f4d890cb777b12c820) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone.mat using Guid(1d747ae06f8903f4d890cb777b12c820) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '49e9ecf2dfa386584dbf53c17bb4a0d7') in 0.055967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 34.795402 seconds.
+  path: Assets/Materials/stone.mat
+  artifactKey: Guid(1d747ae06f8903f4d890cb777b12c820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone.mat using Guid(1d747ae06f8903f4d890cb777b12c820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adea0e2ba3e8003669eb9fa1d09f2f89') in 0.033315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.829910 seconds.
+  path: Assets/Textures/stone.jpg
+  artifactKey: Guid(2ea954fd031e05248830ecaf0960237e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/stone.jpg using Guid(2ea954fd031e05248830ecaf0960237e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ccd32fbbee02f9ac5ae01776e541f40c') in 0.072500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 25.461936 seconds.
+  path: Assets/Materials/stone 1.mat
+  artifactKey: Guid(ff2af33f8bcfe09458114111121aca7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 1.mat using Guid(ff2af33f8bcfe09458114111121aca7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '0ff020aa49df314b8fd4dbf82dfba1fb') in 0.023320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.935062 seconds.
+  path: Assets/Materials/stone 1.mat
+  artifactKey: Guid(ff2af33f8bcfe09458114111121aca7b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 1.mat using Guid(ff2af33f8bcfe09458114111121aca7b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b187ab0b2306a41bcac8bd036b0604a4') in 0.041217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.550330 seconds.
+  path: Assets/Materials/stone 2.mat
+  artifactKey: Guid(96ebb5d42159223439207dd977b38cd5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 2.mat using Guid(96ebb5d42159223439207dd977b38cd5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '08a6e34c7bb16a964597cb78889667a0') in 0.053159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.109260 seconds.
+  path: Assets/Materials/stone 2.mat
+  artifactKey: Guid(96ebb5d42159223439207dd977b38cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 2.mat using Guid(96ebb5d42159223439207dd977b38cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'acb4623e814bba5e264e6b2a8268a20c') in 0.052640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 21.110334 seconds.
+  path: Assets/Materials/stone 3.mat
+  artifactKey: Guid(8e775b2031ba50949a546f393f78bfc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 3.mat using Guid(8e775b2031ba50949a546f393f78bfc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f72d84dbe41105def2683c306b44e788') in 0.064180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 35.193210 seconds.
+  path: Assets/Materials/stone 4.mat
+  artifactKey: Guid(5bd0968444f20404c8d50be6e194a3bc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 4.mat using Guid(5bd0968444f20404c8d50be6e194a3bc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13163b682620fce5798a62d1be8ac7dd') in 0.047804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.995920 seconds.
+  path: Assets/Materials/stone 5.mat
+  artifactKey: Guid(b6494acf7b6215b4b94994e72c7973ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 5.mat using Guid(b6494acf7b6215b4b94994e72c7973ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '15bdf250bb65ada3f80d49fde016c1d3') in 0.050726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 46.479462 seconds.
+  path: Assets/Materials/stone 6.mat
+  artifactKey: Guid(6b1e30978f815d643ab185a402b643ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 6.mat using Guid(6b1e30978f815d643ab185a402b643ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '141d03ace87aea8a883fbada1e763e69') in 0.025351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.807007 seconds.
+  path: Assets/Materials/stone 7.mat
+  artifactKey: Guid(f2a3951d3c9871d45aa81a02f9943db6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 7.mat using Guid(f2a3951d3c9871d45aa81a02f9943db6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7d750d083754e37f1fbbfa58ce89277c') in 0.031858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.882748 seconds.
+  path: Assets/Materials/stone 8.mat
+  artifactKey: Guid(8ab662ee3e50c934597a99a2c1eef147) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 8.mat using Guid(8ab662ee3e50c934597a99a2c1eef147) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '39ecd988c14ad391cad74e76fbcadb93') in 0.044881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.421025 seconds.
+  path: Assets/Materials/stone 9.mat
+  artifactKey: Guid(3ad3bb4e30e4c234b8fe24231439f6ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 9.mat using Guid(3ad3bb4e30e4c234b8fe24231439f6ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '718705b867b25ce0d9e6e3dcdb70d540') in 0.022197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.804092 seconds.
+  path: Assets/Materials/stone 3.mat
+  artifactKey: Guid(8e775b2031ba50949a546f393f78bfc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 3.mat using Guid(8e775b2031ba50949a546f393f78bfc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9fd44e0eeb54ca955da6fabc18377c11') in 0.053100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.066209 seconds.
+  path: Assets/Materials/stone 10.mat
+  artifactKey: Guid(2e8c550c8d6f918498ece506ea0d9fe8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 10.mat using Guid(2e8c550c8d6f918498ece506ea0d9fe8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6c4fa1c7c1b57ad8be598e092881d812') in 0.038376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.302356 seconds.
+  path: Assets/Scenes/Ex1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/Ex1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9337885aff450b6b4885f400b10d8e58') in 0.040212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.727826 seconds.
+  path: Assets/Scenes/Ex1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/Ex1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '616fb3fe1e9008af1dcacdd1575ed3e3') in 0.036279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.497128 seconds.
+  path: Assets/Materials/stone 12.mat
+  artifactKey: Guid(64cb97e79a5f6bc43972393d6410b670) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 12.mat using Guid(64cb97e79a5f6bc43972393d6410b670) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b1e80f41d1ce3cfff293cba33659f7ad') in 0.027111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.553921 seconds.
+  path: Assets/Scenes/Ex1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/Ex1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4bfcbe5d1c5417c79934454e86a372fa') in 0.037831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.541356 seconds.
+  path: Assets/Materials/stone 13.mat
+  artifactKey: Guid(fd2b451b3ce7b424dabd2e87fb8f22dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/stone 13.mat using Guid(fd2b451b3ce7b424dabd2e87fb8f22dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ShaderUtil:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.MaterialEditor:GetMaterialProperties (UnityEngine.Object[])
+UnityEditor.Search.IndexerExtensions:MaterialShaderReferences (UnityEditor.Search.CustomObjectIndexerTarget,UnityEditor.Search.ObjectIndexer)
+UnityEditor.Search.ObjectIndexer:CallCustomIndexers (string,int,UnityEngine.Object,UnityEditor.SerializedObject,bool)
+UnityEditor.Search.ObjectIndexer:IndexCustomProperties (string,int,UnityEngine.Object)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f9b22cc649ac77f2b897015c7cb8e253') in 0.046863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.800544 seconds.
+  path: Assets/Materials/stone 3.mat
+  artifactKey: Guid(8e775b2031ba50949a546f393f78bfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 3.mat using Guid(8e775b2031ba50949a546f393f78bfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9937a9ccc453367529e1044489cd9fb') in 0.022509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/Materials/stone 7.mat
+  artifactKey: Guid(f2a3951d3c9871d45aa81a02f9943db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 7.mat using Guid(f2a3951d3c9871d45aa81a02f9943db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '978d7a042bff8328a70c5f73f377ce61') in 0.042985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Materials/stone 6.mat
+  artifactKey: Guid(6b1e30978f815d643ab185a402b643ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 6.mat using Guid(6b1e30978f815d643ab185a402b643ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '90d37f73c123a850a6ba6e3db6012ae0') in 0.050814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Materials/stone 5.mat
+  artifactKey: Guid(b6494acf7b6215b4b94994e72c7973ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 5.mat using Guid(b6494acf7b6215b4b94994e72c7973ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '9208787b167ab539166bcef01dbf5b6f') in 0.023965 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Materials/stone 11.mat
+  artifactKey: Guid(3cbdaeceeb4b7774ca6533d1ba75a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 11.mat using Guid(3cbdaeceeb4b7774ca6533d1ba75a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'eb44f638c4ee00bd0134acf50ff0d873') in 0.025681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Materials/stone 8.mat
+  artifactKey: Guid(8ab662ee3e50c934597a99a2c1eef147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 8.mat using Guid(8ab662ee3e50c934597a99a2c1eef147) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '71956819d771a439216fddaf51229564') in 0.020425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Materials/stone 13.mat
+  artifactKey: Guid(fd2b451b3ce7b424dabd2e87fb8f22dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 13.mat using Guid(fd2b451b3ce7b424dabd2e87fb8f22dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'a2f835ac3badcc9b6599dfb42933fc65') in 0.033510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Materials/stone 12.mat
+  artifactKey: Guid(64cb97e79a5f6bc43972393d6410b670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 12.mat using Guid(64cb97e79a5f6bc43972393d6410b670) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '1f23ea2ef6a8e10c106fdb0c7d72873d') in 0.020958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Materials/stone 9.mat
+  artifactKey: Guid(3ad3bb4e30e4c234b8fe24231439f6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 9.mat using Guid(3ad3bb4e30e4c234b8fe24231439f6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'f4edac5812918b30c31f734f573289a8') in 0.037624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Materials/stone 10.mat
+  artifactKey: Guid(2e8c550c8d6f918498ece506ea0d9fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 10.mat using Guid(2e8c550c8d6f918498ece506ea0d9fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning 3D texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Runtime\Shaders\ShaderImpl\ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '6c75e6d2e088737cbc6144f45860cfde') in 0.044510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.205808 seconds.
+  path: Assets/Materials/stone 1.mat
+  artifactKey: Guid(ff2af33f8bcfe09458114111121aca7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 1.mat using Guid(ff2af33f8bcfe09458114111121aca7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8fc7a17e287709be3a22703ff7efde8') in 0.028423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Materials/stone 7.mat
+  artifactKey: Guid(f2a3951d3c9871d45aa81a02f9943db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 7.mat using Guid(f2a3951d3c9871d45aa81a02f9943db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64e6e1a8637193f0121bab6484ef7e94') in 0.028966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Materials/stone 4.mat
+  artifactKey: Guid(5bd0968444f20404c8d50be6e194a3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 4.mat using Guid(5bd0968444f20404c8d50be6e194a3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c86784c66883cdb9f472b998b2bac20') in 0.023797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Materials/stone 11.mat
+  artifactKey: Guid(3cbdaeceeb4b7774ca6533d1ba75a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 11.mat using Guid(3cbdaeceeb4b7774ca6533d1ba75a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30109e4348a0e4532d6ede8abc8981dc') in 0.026233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Materials/stone 13.mat
+  artifactKey: Guid(fd2b451b3ce7b424dabd2e87fb8f22dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 13.mat using Guid(fd2b451b3ce7b424dabd2e87fb8f22dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f7318463579f02074005a84a7815f8') in 0.024160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Materials/stone 9.mat
+  artifactKey: Guid(3ad3bb4e30e4c234b8fe24231439f6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/stone 9.mat using Guid(3ad3bb4e30e4c234b8fe24231439f6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc4b8af843f8d02a3032ab1e3dfcec20') in 0.051929 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Операция ввода/вывода была прервана из-за завершения потока команд или по запросу приложения.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

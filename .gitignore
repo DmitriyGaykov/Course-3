@@ -2,6 +2,7 @@
 **/node_modules
 **/.env
 /Тестирование/lab1/I-can-win/
+/**/*.unity
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -43,3 +44,30 @@ target/
 
 ### Mac OS ###
 .DS_Store
+
+### Unity Projects
+
+### Extentions of Unity
+*.unityproj
+*.mat
+*.meta
+*.mdb
+*.pdb
+*.mdb.meta
+*.pdb.meta
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.svd.meta
+*.suo
+*.sln
+*.sln.meta
+*.user
+*.user.meta
+*.unityproj.meta
+*.tmp
+*.userprefs.meta
+*.pidb.meta
+*.booproj.meta
+*.suo.meta
