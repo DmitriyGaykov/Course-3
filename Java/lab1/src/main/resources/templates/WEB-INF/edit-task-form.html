@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit task</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body class="w-100 p-2 d-flex flex-column min-vh-100 justify-content-center align-items-center">
+<h1 class="h1 text-white fw-bold">Edit task:</h1>
+<form th:action="@{/edit}" method="POST" th:object="${taskform}" class="container form-control w-50 bg-white bg-opacity-75 p-lg-4">
+  <input type="hidden" th:field="*{id}"/>
+  <div class="mb-3 w-100">
+    <label for="condition" class="form-label">Condition:</label>
+    <input type="text" class="form-control bg-white" id="condition" th:field="*{condition}">
+  </div>
+  <div class="mb-3 w-100">
+    <label for="answer" class="form-label">Answer:</label>
+    <input type="text" class="form-control bg-white" id="answer" th:field="*{answer}">
+  </div>
+  <div class="container d-flex justify-content-sm-between">
+    <button type="submit" class="btn btn-primary bg-primary">Edit</button>
+    <button class="btn btn-primary bg-danger dell" th:data-id="${id}">Delete</button>
+  </div>
+</form>
+<h3 class="p-4 rounded-1 d-block bg-danger bg-opacity-25 text-danger"
+    th:text="${errorMessage}"
+    th:if="${errorMessage}"
+></h3>
+</body>
+
+<script>
+  const dell = document.querySelector('.dell');
+
+  dell.onclick = async ({ target }) => {
+    const id = target.getAttribute('data-id');
+    const response = await fetch(`/delete/${id}`, {
+      method: 'DELETE',
+    });
+    if (response.ok) {
+      window.location.href = '/tasks';
+    }
+  }
+</script>
+
+</html>
