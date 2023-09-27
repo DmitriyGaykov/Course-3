@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XML</title>
+</head>
+<body>
+    <p class="text"></p>
+</body>
+
+<script>
+    const xmlHttpRequest = new XMLHttpRequest()
+    xmlHttpRequest.open('GET', '/api/name', true)
+
+    xmlHttpRequest.onreadystatechange = () => {
+        const text = document.querySelector('.text')
+
+        const { readyState, status, responseText } = xmlHttpRequest
+
+        if(readyState === 4 && status === 200) {
+            text.innerHTML = responseText
+        }
+    }
+
+    xmlHttpRequest.send()
+</script>
+
+</html>

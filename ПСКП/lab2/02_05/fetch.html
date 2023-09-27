@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XML</title>
+</head>
+<body>
+<p class="text"></p>
+</body>
+
+<script>
+    const getName = async () => {
+        try {
+            const res = await fetch('/api/name', {
+                method: 'GET'
+            })
+
+            if(res.ok) {
+                const data = await res.text()
+                document.querySelector('.text').innerHTML = data;
+            }
+        } catch (e) {
+            alert('error')
+        }
+    }
+
+    document.body.onload = getName;
+</script>
+
+</html>

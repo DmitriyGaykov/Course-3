@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <p class="res"></p>
+</body>
+
+<script>
+    const res = document.querySelector('.res');
+
+    const add = (index, time, param, resp) => {
+        const message = "<INDEX>. Результат: <TIME>-<PARAM>/<RESP><br/>"
+
+        res.innerHTML += message
+            .replace('<INDEX>', index)
+            .replace('<TIME>', time)
+            .replace('<PARAM>', param)
+            .replace('<RESP>', resp)
+    }
+
+    const start = async() => {
+        let start, end;
+
+        let resp, data;
+
+        const cstart = new Date().getTime();
+        for (let i = 1; i < 20; i++) {
+            start = new Date().getTime();
+
+            resp = await fetch(`/fact?k=${i}`, {
+                method: 'GET'
+            })
+            console.log(resp)
+            data = await resp.json()
+
+            end = new Date().getTime();
+
+            add(i, end - start, i, data.fact)
+        }
+        const cend = new Date().getTime();
+
+        res.innerHTML += `Цикл работал: ${cend - cstart} мс`
+    }
+
+    start()
+</script>
+
+</html>

@@ -64,6 +64,7 @@
     <Compile Include="Assets\Ex7.cs" />
     <Compile Include="Assets\Ex3.cs" />
     <Compile Include="Assets\Ex4.cs" />
+    <Compile Include="Assets\CameraScript.cs" />
     <Compile Include="Assets\Ex2.cs" />
   </ItemGroup>
   <ItemGroup>
