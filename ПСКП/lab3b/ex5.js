@@ -27,7 +27,7 @@ const quartet =  async num => {
 
 (async () => {
     try {
-        const num = '112'
+        const num = '23x2'
 
         const res = await Promise.all([
             square(num),

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/utils/bootstrap/dist/css/bootstrap.min.css">
+
+<body class="d-flex flex-column gap-3 w-100 min-vh-100 bg-dark bg-opacity-75">
+<div class="p-lg-4 w-100 d-flex justify-content-start h-100">
+    <div class="w-50 h-100 d-flex justify-content-center align-items-center">
+        <form class="add-form w-75 d-flex gap-3 flex-column p-3 form-control bg-dark bg-opacity-75">
+            <div class="container d-flex justify-content-between w-100 align-content-center">
+                <label class="form-label text-black text-white fw-bold" for="name">Name:</label>
+                <input class="name form-control w-75" id="name" name="name"/>
+            </div>
+            <div class="container d-flex justify-content-between w-100 align-content-center">
+                <label class="form-label text-black text-white fw-bold" for="bday">Bday:</label>
+                <input class="bday form-control w-75" type="date" id="bday" name="bday"/>
+            </div>
+            <button class="btn btn-success">Complete!</button>
+        </form>
+    </div>
+    <div class="w-50 d-flex">
+        <div class="people-wrapper bg-dark bg-opacity-75 w-100 container d-flex flex-column gap-3">
+            <div class="container d-flex justify-content-between p-3">
+                <div class="text-white fw-bold text-center w-25">Id</div>
+                <div class="text-white fw-bold text-center w-50">Name</div>
+                <div class="text-white fw-bold text-center w-25">Bday</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="/js/api.js"></script>

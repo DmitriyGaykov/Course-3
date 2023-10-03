@@ -64,7 +64,7 @@ public class TaskController {
         return modelAndView;
     }
 
-    @PostMapping("/")
+    @PostMapping("/add")
     public ModelAndView submitTaskForm(Model model, @ModelAttribute("taskform") TaskForm taskForm) {
         if(taskForm.getAnswer().isEmpty() || taskForm.getCondition().isEmpty()) {
             var modelAndView = new ModelAndView("add-task-form");

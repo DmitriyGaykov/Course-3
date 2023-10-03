@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Add task</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body class="w-100 p-2 d-flex flex-column min-vh-100 justify-content-center align-items-center">
 <h1 class="h1 text-white fw-bold">Add task:</h1>
-<form th:action="@{/static}" method="post" th:object="${taskform}" class="container form-control w-50 bg-white bg-opacity-75 p-lg-4">
+<form th:action="@{/add}" method="POST" th:object="${taskform}" class="container form-control w-50 bg-white bg-opacity-75 p-lg-4">
     <div class="mb-3 w-100">
         <label for="condition" class="form-label">Condition:</label>
         <input type="text" class="form-control bg-white" id="condition" th:field="*{condition}">
