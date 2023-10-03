@@ -1,0 +1,70 @@
+Запущен по таймеру
+Running as SYSTEM
+Собирается удаленно на [8mha:////4FnLfJ/oxqaWhm9tgqq7jK0kIv6pqPbMgSX/P3QiVXExAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/eT83ILSktQifRdPX0cAwmw1gMMAAAA=[0mDIMA (win10 x64) in workspace D:\Course3\Тестирование\lab5\slave\workspace\Repository
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir D:\Course3\Тестирование\lab5\slave\workspace\Repository\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/vitalliuss/helloci/rere # timeout=10
+Fetching upstream changes from https://github.com/vitalliuss/helloci/rere
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.34.0.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/vitalliuss/helloci/rere +refs/heads/*:refs/remotes/origin/* # timeout=10
+ERROR: Error fetching remote repo 'origin'
+hudson.plugins.git.GitException: Failed to fetch from https://github.com/vitalliuss/helloci/rere
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:999)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1241)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1305)
+	at hudson.scm.SCM.checkout(SCM.java:540)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1245)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:649)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:85)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:521)
+	at hudson.model.Run.execute(Run.java:1900)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+Caused by: hudson.plugins.git.GitException: Command "git.exe fetch --tags --force --progress -- https://github.com/vitalliuss/helloci/rere +refs/heads/*:refs/remotes/origin/*" returned status code 128:
+stdout: 
+stderr: remote: Not Found
+fatal: repository 'https://github.com/vitalliuss/helloci/rere/' not found
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2842)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:2185)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$1.execute(CliGitAPIImpl.java:635)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$GitCommandMasterToSlaveCallable.call(RemoteGitImpl.java:170)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$GitCommandMasterToSlaveCallable.call(RemoteGitImpl.java:161)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:377)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:125)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+	Suppressed: hudson.remoting.Channel$CallSiteStackTrace: Remote call to JNLP4-connect connection from 127.0.0.1/127.0.0.1:53130
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1784)
+		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:356)
+		at hudson.remoting.Channel.call(Channel.java:1000)
+		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.execute(RemoteGitImpl.java:153)
+		at jdk.internal.reflect.GeneratedMethodAccessor703.invoke(Unknown Source)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.invoke(RemoteGitImpl.java:138)
+		at com.sun.proxy.$Proxy139.execute(Unknown Source)
+		at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:997)
+		at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1241)
+		at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1305)
+		at hudson.scm.SCM.checkout(SCM.java:540)
+		at hudson.model.AbstractProject.checkout(AbstractProject.java:1245)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:649)
+		at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:85)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:521)
+		at hudson.model.Run.execute(Run.java:1900)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+		at hudson.model.ResourceController.execute(ResourceController.java:101)
+		at hudson.model.Executor.run(Executor.java:442)
+ERROR: Error fetching remote repo 'origin'
+Archiving artifacts
+Finished: FAILURE

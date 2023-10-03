@@ -1,11 +1,11 @@
 import EventEmitter from 'events'
 
 let db_data = [
-    {id: 1, name: 'Dima', bday: new Date()},
-    {id: 2, name: 'Olga', bday: new Date()},
-    {id: 3, name: 'Oleg', bday: new Date()},
-    {id: 4, name: 'Evgeniy', bday: new Date()},
-    {id: 5, name: 'Elena', bday: new Date()},
+    {id: 1, name: 'Dima', bday: '2023-02-03'},
+    {id: 2, name: 'Olga', bday: '2023-01-12'},
+    {id: 3, name: 'Oleg', bday: '2023-05-04'},
+    {id: 4, name: 'Evgeniy', bday: '2023-01-04'},
+    {id: 5, name: 'Elena', bday: '2023-02-04'},
 ]
 
 export class DB extends EventEmitter {
@@ -17,7 +17,7 @@ export class DB extends EventEmitter {
 
     async insert({ name, bday }) {
         return new Promise((resolve, reject) => {
-            const id = Math.random() * 4_000_000_000
+            const id = Math.floor(Math.random() * 4_000_000_000)
             let err = ''
 
             if(!name)

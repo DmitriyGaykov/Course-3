@@ -1,0 +1,10 @@
+Started by user [8mha:////4EOPopojK0lt1I+igf84qmzteTOnnnX4v2NSdibhtGr3AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYu/dLi1CL9lMzcRACTX6R7vwAAAA==[0mГайков Дима Викторович
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\HelloJob
+[HelloJob] $ cmd /c call C:\Windows\TEMP\jenkins3437563599975168235.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\HelloJob>echo Hello, User 
+Hello, User
+
+C:\ProgramData\Jenkins\.jenkins\workspace\HelloJob>exit 0 
+Finished: SUCCESS
