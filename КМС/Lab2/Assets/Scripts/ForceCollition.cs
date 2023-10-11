@@ -13,6 +13,9 @@ namespace Scripts
         
         private void OnCollisionEnter(Collision other)
         {
+            if (other.gameObject.name.Equals("Floor"))
+                return;
+            
             var rand = new Random();
             
             var vector = rand.Next(1, 4) switch

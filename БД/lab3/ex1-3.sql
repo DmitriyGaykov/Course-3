@@ -36,5 +36,5 @@ FROM v$session s
 JOIN v$pdbs p ON s.con_id = p.con_id
 WHERE s.type = 'USER';
 
-
+ALTER PLUGGABLE DATABASE GDV_PDB CLOSE;
 drop pluggable database GDV_PDB including datafiles;

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "open": "explorer \"http://localhost:5000ff\"",
+    "open": "explorer \"http://localhost:5000\"",
     "dev": "concurrently \"npm start\" \"npm run open\""
   },
   "keywords": [],

@@ -71,8 +71,6 @@ const server = createServer((req, res) => {
     req.query = query
     req.pathname = pathname
 
-    console.log(req.url)
-
     return req.on('end', () => {
         if(pathname === '/api/db')
             return db.emit(req.method, req, res)

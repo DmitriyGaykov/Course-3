@@ -35,6 +35,10 @@ const addPerson = async () => {
             }
         })
 
+        if(!resp.ok) {
+            throw await resp.text();
+        }
+
         const nuser = await resp.json()
 
         addNote(gwrapper, nuser)
@@ -70,6 +74,9 @@ const editInfo = async () => {
             }
         })
 
+        if(!resp.ok)
+            throw await resp.text()
+
         const nuser = await resp.json()
 
         const note = document.querySelector(`#id${nuser.id}`)
@@ -78,7 +85,7 @@ const editInfo = async () => {
         note.querySelector('.td-name').innerHTML = nuser.name
         note.querySelector('.td-bday').innerHTML = nuser.bday
     } catch (e) {
-        alert(e.message)
+        alert(e)
     }
 }
 const deletePerson = async id => {

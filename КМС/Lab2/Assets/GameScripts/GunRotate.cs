@@ -9,10 +9,9 @@ public class GunRotate : MonoBehaviour
     // Поворот должет идти относительно предыдущих координат и поворота
 
     public GameObject ammo;
+    public GameObject aim;
     
-    private float _rotationSpeed = 10f;
-    private float _rotationAngle = 0f;
-    private float _rotationLimit = 85f;
+    private float _rotationSpeed = 11f;
     
     void Update()
     {
@@ -24,35 +23,35 @@ public class GunRotate : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            var ammoInstance = Instantiate(ammo, transform.position, Quaternion.identity);
-        
-            // Получаем направление от верхней части пушки (transform.up), учитывая угол наклона.
-            Vector3 fireDirection = transform.rotation * Vector3.up;
-        
-            // Добавляем силу в направлении от верхней части пушки.
-            ammoInstance.GetComponent<Rigidbody>().AddForce(fireDirection * 15_000f);
-            Destroy(ammoInstance, 1.5f);
+            // Получаем текущую позицию пушки.
+            Vector3 shootPosition = transform.position;
+
+            // Получаем направление от текущей позиции пушки к позиции aim.
+            Vector3 fireDirection = aim.transform.position - shootPosition;
+
+            // Создаем пулю в текущей позиции пушки.
+            var ammoInstance = Instantiate(ammo, shootPosition, Quaternion.identity);
+
+            // Устанавливаем силу пули.
+            float bulletSpeed = 15_000f;
+            ammoInstance.GetComponent<Rigidbody>().AddForce(fireDirection.normalized * bulletSpeed);
+
+            // Уничтожаем пулю через 2.5 секунды.
+            Destroy(ammoInstance, 2.5f);
         }
     }
+
 
     
     void MoveGun()
     {
         if (Input.GetKey(KeyCode.S))
         {
-            if (_rotationAngle < _rotationLimit)
-            {
-                transform.Rotate(Vector3.right, _rotationSpeed * Time.deltaTime);
-                _rotationAngle += _rotationSpeed * Time.deltaTime;
-            }
+            transform.Rotate(Vector3.right, _rotationSpeed * Time.deltaTime);
         }
         else if (Input.GetKey(KeyCode.W))
         {
-            if (_rotationAngle > -_rotationLimit)
-            {
-                transform.Rotate(Vector3.left, _rotationSpeed * Time.deltaTime);
-                _rotationAngle -= _rotationSpeed * Time.deltaTime;
-            }
+            transform.Rotate(Vector3.left, _rotationSpeed * Time.deltaTime);
         }
         else if (Input.GetKey(KeyCode.D))
         {

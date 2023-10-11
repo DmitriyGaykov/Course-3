@@ -59,10 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ForceCollition.cs" />
+    <Compile Include="Assets\GameScripts\BoosterTrigger.cs" />
     <Compile Include="Assets\GameScripts\AmmoScript.cs" />
     <Compile Include="Assets\Scripts\CubePlayer.cs" />
     <Compile Include="Assets\Scripts\MotionScript.cs" />
     <Compile Include="Assets\Scripts\DestroyScript.cs" />
+    <Compile Include="Assets\GameScripts\MotionScript.cs" />
     <Compile Include="Assets\GameScripts\PushAway.cs" />
     <Compile Include="Assets\Scripts\ChangeScript.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />

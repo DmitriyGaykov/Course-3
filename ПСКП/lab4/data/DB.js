@@ -17,7 +17,11 @@ export class DB extends EventEmitter {
 
     async insert({ name, bday }) {
         return new Promise((resolve, reject) => {
-            const id = Math.floor(Math.random() * 4_000_000_000)
+            let id;
+            do {
+                id = Math.floor(Math.random() * 4_000_000_000)
+            } while(db_data.map(el => el.id).includes(id));
+
             let err = ''
 
             if(!name)
@@ -25,8 +29,12 @@ export class DB extends EventEmitter {
             if(!bday)
                 err = 'Provide bday!'
 
+            if(new Date().toISOString().split("T")[0] < bday) {
+                err += '\nDate is more than current date'
+            }
+
             if(err !== '')
-                reject(err)
+                return reject(err)
 
             const newUser = {
                 id,
@@ -51,6 +59,12 @@ export class DB extends EventEmitter {
 
             if(!user) {
                 return reject('No user with ID ' + id)
+            }
+
+            console.log(new Date().toISOString().split("T")[0], bday)
+
+            if(new Date().toISOString().split("T")[0] < bday) {
+                return reject('Bday is more than current date')
             }
 
             user.name = name || user.name
