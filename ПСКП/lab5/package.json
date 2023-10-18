@@ -1,0 +1,21 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"nodemon index.js\" \"explorer http://localhost:5000/api\""
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "nodemailer": "6.9.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}

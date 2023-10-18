@@ -1,5 +1,8 @@
 ---------1----------
-select * from DBA_TABLESPACES;
+select * from SYS.DBA_TABLESPACES;
+
+select TABLESPACE_NAME, FILE_NAME from SYS.DBA_DATA_FILES;
+select TABLESPACE_NAME, FILE_NAME from SYS.DBA_TEMP_FILES;
 ---------2------------
 -- 2. Создайте табличное пространство с именем XXX_QDATA (10m).
 -- При создании установите его в состояние offline.
@@ -82,17 +85,18 @@ select member from v$logfile;
 -- Запишите серверное время в момент вашего первого переключения (оно понадобится для
 -- выполнения следующих заданий).
 
-select group#, status from v$log;
 alter system switch logfile; -- выполнить 2 раза и следить, где в v$log status = 'CURRENT'
+select group#, status from v$log;
 select group# from v$log where status = 'CURRENT';
+select current_timestamp from sys.dual;
 
 -- 12. EX. Создайте дополнительную группу журналов повтора с тремя файлами журнала.
 -- Убедитесь в наличии группы и файлов, а также в работоспособности группы (переключением).
 -- Проследите последовательность SCN.
 
-alter database add logfile group 4 ('redo04.log') size 50m,
-    group 5 ('redo05.log') size 50m,
-    group 6 ('redo06.log') size 50m;
+--alter database add logfile group 4 ('redo04.log') size 50m,
+--    group 5 ('redo05.log') size 50m,
+--    group 6 ('redo06.log') size 50m;
 
 alter database add logfile group 4 ('redo04.log') size 50m;
 
@@ -114,8 +118,6 @@ alter database drop logfile group 4;
 
 -- Не работает
 alter database drop logfile member 'C:\WINDOWS.X64_193000_DB_HOME\DATABASE\REDO04.LOG';
-alter database drop logfile member 'C:\WINDOWS.X64_193000_DB_HOME\DATABASE\REDO05.LOG';
-alter database drop logfile member 'C:\WINDOWS.X64_193000_DB_HOME\DATABASE\REDO06.LOG';
 
 -- 14. Определите, выполняется или нет архивирование журналов повтора
 -- (архивирование должно быть отключено, иначе дождитесь, пока другой студент

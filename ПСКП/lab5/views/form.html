@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form class="form">
+        <input class="sender" id="sender" name="sender" placeholder="Sender..."/><br/>
+        <input class="recipient" id="recipient" name="recipient" placeholder="Recipient..."/><br/>
+        <input class="message" id="message" name="message" placeholder="Message..."/><br/>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+<script>
+    const form = document.querySelector('form');
+
+    form.onsubmit = async e => {
+        try {
+            e.preventDefault();
+
+            const message = {
+                sender: e.target.sender.value,
+                recipient: e.target.recipient.value,
+                message: e.target.message.value
+            };
+
+            const json = JSON.stringify(message);
+            const res = await fetch('/api/emails', {
+                method: 'POST',
+                body: json,
+                headers: {
+                    'Contents-Type': 'text/json'
+                }
+            });
+
+            if(res.status !== 201) {
+                throw await res.text();
+            }
+
+            alert(`Успех! Отправлено на ${e.target.recipient.value}`);
+        } catch(e) {
+            console.log(e);
+            alert('Ошибка! ' + e);
+        }
+    }
+</script>
+
+</html>

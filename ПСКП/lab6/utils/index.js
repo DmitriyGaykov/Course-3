@@ -1,0 +1,1 @@
+export const createEvent = (url, method) => `${url} (${method})`;
