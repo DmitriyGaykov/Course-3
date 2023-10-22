@@ -1,5 +1,6 @@
 ---------1----------
 select * from SYS.DBA_TABLESPACES;
+-- 1. Получите список всех файлов табличных пространств (перманентных  и временных).
 
 select TABLESPACE_NAME, FILE_NAME from SYS.DBA_DATA_FILES;
 select TABLESPACE_NAME, FILE_NAME from SYS.DBA_TEMP_FILES;
@@ -33,6 +34,8 @@ create table GDV_T1 (
 insert into GDV_T1(x, y) values (1, 2);
 insert into GDV_T1(x, y) values (2, 3);
 insert into GDV_T1(x, y) values (3, 4);
+
+select * from GDV_T1;
 
 -- 3. Получите список сегментов табличного пространства  XXX_QDATA.
 -- Определите сегмент таблицы XXX_T1. Определите остальные сегменты.
@@ -156,7 +159,7 @@ alter database open;
 
 -- 19. Получите список управляющих файлов.
 
-select * from v$controlfile;
+select NAME from v$controlfile;
 
 -- 20. Получите и исследуйте содержимое управляющего файла.
 -- Поясните известные вам параметры в файле.

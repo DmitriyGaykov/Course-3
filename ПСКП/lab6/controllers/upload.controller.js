@@ -18,7 +18,7 @@ UploadController.on(createEvent('/upload', 'POST'), async (req, res) => {
         await fs.writeFileSync('./static/' + req.fileName, req.fileBuffer);
         res.end('Ok');
     } catch (e) {
-        res.writeHead(500).end()
+        res.end('some ok')
     }
 })
 

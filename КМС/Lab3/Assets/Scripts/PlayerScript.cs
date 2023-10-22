@@ -26,10 +26,9 @@ namespace Assets.Scripts
         
         private void Start()
         {
-            // Получаем компонент камеры, прикрепленной к игроку
             playerCamera = GetComponentInChildren<Camera>();
-            Cursor.lockState = CursorLockMode.Locked; // Блокируем курсор
-            Cursor.visible = false; // Скрываем курсор
+            Cursor.lockState = CursorLockMode.Locked; 
+            Cursor.visible = false;
         }
 
         private void Update()
@@ -41,7 +40,6 @@ namespace Assets.Scripts
                 isDestroyed = true;
             }
             
-            // Управление движением
             float horizontalInput = Input.GetAxis("Horizontal");
             float verticalInput = Input.GetAxis("Vertical");
 
@@ -49,29 +47,21 @@ namespace Assets.Scripts
             moveDirection.Normalize();
             transform.Translate(moveDirection * (moveSpeed * Time.deltaTime));
 
-            // Управление камерой с помощью мыши
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
 
             rotation.x -= mouseY * sensitivity;
             rotation.y += mouseX * sensitivity;
-            rotation.x = Mathf.Clamp(rotation.x, -90.0f, 90.0f); // Ограничиваем угол наклона вверх и вниз
+            rotation.x = Mathf.Clamp(rotation.x, -90.0f, 90.0f);
 
-            // Поворачиваем игрока по вертикали
             transform.rotation = Quaternion.Euler(0, rotation.y, 0);
 
-            // Поворачиваем камеру по горизонтали
             playerCamera.transform.localRotation = Quaternion.Euler(rotation.x, 0, 0);
-            
-            // Нарисуй лучь, который будет идити от центра героя в направлении курсора
-           
             Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
         
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                // Если луч пересекает объект, вы можете выполнить дополнительные действия здесь
-
                 if (hit.collider.gameObject.name.StartsWith("Bee"))
                 {
                     hit.rigidbody.useGravity = true;
