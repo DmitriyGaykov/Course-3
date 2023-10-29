@@ -64,7 +64,6 @@ app.get('/api/ex07', async (req, res) => {
     const currentURL = import.meta.url;
     const currentPath = fileURLToPath(currentURL);
     const currentDirectory = dirname(currentPath);
-    
     await res.sendFile(join(currentDirectory, 'index.js'));
   } catch (e) {
     console.log(e)

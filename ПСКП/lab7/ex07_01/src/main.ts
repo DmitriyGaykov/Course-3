@@ -67,7 +67,7 @@ root!.innerHTML = `
     </div>
     <div class="d-flex flex-column gap-2">
         <h1 class="flex-column">ex07_06</h1>
-        <form class="file-form ex06 form-control container d-flex flex-column gap-2 border border-1 rounded-1 border-dark">
+        <form class="file-form ex06 form-control container d-flex flex-column gap-2 border border-1 rounded-1 border-dark" encType="multipart/form-data">
           <input class="form-control" type="file" name="image" id="file"/>
           <button class="submit btn btn-info">Send</button>
         </form>
