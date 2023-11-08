@@ -33,9 +33,6 @@ import axios from "axios";
 
  */
 
-
-
-
 const host : string = 'http://localhost:3000/api';
 
 const root = document.querySelector<HTMLDivElement>('#app');
