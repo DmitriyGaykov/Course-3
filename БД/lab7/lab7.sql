@@ -48,15 +48,6 @@ GRANT
   GRANT ANY ROLE
 TO RL_GDVCORE;
 
-GRANT
-  ADMINISTER ANY SQL TUNING SET
-TO RL_GDVCORE;
-
-GRANT
-  USE ANY JOB RESOURCE,
-  USE ANY SQL TRANSLATION PROFILE
-TO RL_GDVCORE;
-
 CREATE USER GDV identified by 123123
   DEFAULT TABLESPACE TS_GDV
   TEMPORARY TABLESPACE TS_GDV_TEMP
@@ -132,15 +123,19 @@ CREATE SEQUENCE S4
 
 SELECT S4.NEXTVAL FROM DUAL;
 
+DROP SEQUENCE S4;
+DROP SEQUENCE S3;
+DROP SEQUENCE S2;
+DROP SEQUENCE S1;
+
 -- 7.	Получите список всех последовательностей в словаре базы данных, владельцем которых является пользователь XXX.
 
-SELECT * FROM ALL_SEQUENCES WHERE SEQUENCE_OWNER = 'GDV';
+SELECT SEQUENCE_NAME FROM ALL_SEQUENCES WHERE SEQUENCE_OWNER = 'GDV';
 
 -- 8.	Создайте таблицу T1, имеющую столбцы N1, N2, N3, N4, типа NUMBER (20), кэшируемую
 -- и расположенную в буферном пуле KEEP. С помощью оператора INSERT добавьте 7 строк, вводимое
 -- значение для столбцов должно формироваться с помощью последовательностей S1, S2, S3, S4.
 
--- Сброс последовательностей
 ALTER SEQUENCE S1 INCREMENT BY 1;
 ALTER SEQUENCE S2 INCREMENT BY 1;
 ALTER SEQUENCE S3 INCREMENT BY 1;
@@ -161,12 +156,16 @@ END;
 
 SELECT * FROM T1;
 
+DROP TABLE T1;
+
 -- 9.	Создайте кластер ABC, имеющий hash-тип (размер 200) и содержащий 2 поля: X (NUMBER (10)), V (VARCHAR2(12)).
 
 CREATE CLUSTER ABC (
   X NUMBER(10),
   V VARCHAR2(12)
   ) SIZE 200 HASHKEYS 200;
+
+DROP CLUSTER ABC;
 
 -- 10.	Создайте таблицу A, имеющую столбцы XA (NUMBER (10)) и VA (VARCHAR2(12)),
 -- принадлежащие кластеру ABC, а также еще один произвольный столбец.
@@ -199,6 +198,10 @@ CREATE TABLE C (
 
 INSERT INTO C VALUES (1, '1', 1);
 
+DROP TABLE C;
+DROP TABLE B;
+DROP TABLE A;
+
 -- 13.	Найдите созданные таблицы и кластер в представлениях словаря Oracle.
 
 SELECT TABLE_NAME FROM USER_TABLES;
@@ -213,6 +216,9 @@ SELECT * FROM SC;
 
 CREATE PUBLIC SYNONYM SB FOR GDV.B;
 SELECT * FROM SB;
+
+DROP PUBLIC SYNONYM SB;
+DROP PUBLIC SYNONYM SC;
 
 -- 16.	Создайте две произвольные таблицы A и B (с первичным и внешним ключами),
 -- заполните их данными, создайте представление V1, основанное на SELECT... FOR A inner
@@ -232,6 +238,9 @@ CREATE TABLE B16 (
   CONSTRAINT FK_B16 FOREIGN KEY (XB) REFERENCES A16(XA)
 );
 
+DROP TABLE B16;
+DROP TABLE A16;
+
 INSERT INTO A16 VALUES (1, '1', 1);
 INSERT INTO B16 VALUES (1, '1', 1);
 
@@ -246,11 +255,16 @@ CREATE VIEW V1 AS
 
 SELECT * FROM V1;
 
--- 17.	На основе таблиц A и B создайте материализованное представление MV, которое имеет периодичность обновления 2 минуты. Продемонстрируйте его работоспособность.
+DROP VIEW V1;
+
+-- 17.	На основе таблиц A и B создайте материализованное представление
+-- MV, которое имеет периодичность обновления 2 минуты.
+-- Продемонстрируйте его работоспособность.
 
 CREATE MATERIALIZED VIEW MV
-  REFRESH FORCE ON DEMAND
-  NEXT SYSDATE + 2/1440
+  REFRESH COMPLETE ON DEMAND
+    START WITH SYSDATE
+    NEXT SYSDATE + NUMTODSINTERVAL(2, 'MINUTE')
   AS
     SELECT
       *
@@ -259,5 +273,7 @@ CREATE MATERIALIZED VIEW MV
     INNER JOIN
         B16
           ON A16.XA = B16.XB;
+
+DROP MATERIALIZED VIEW MV;
 
 SELECT * FROM MV;

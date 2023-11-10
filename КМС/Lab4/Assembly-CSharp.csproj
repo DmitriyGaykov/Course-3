@@ -59,7 +59,10 @@
     <Analyzer Include="D:\Бред всякий\UnityHub\2022.3.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ClickNavScript.cs" />
     <Compile Include="Assets\NavScript.cs" />
+    <Compile Include="Assets\TransScript.cs" />
+    <Compile Include="Assets\ChangeCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
