@@ -2,10 +2,6 @@ package epam.lab9;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.support.ui.*;
-
-import java.time.Duration;
-import java.util.function.Function;
 
 public class WebDriverTest {
   public static void main(String[] args) throws InterruptedException {
