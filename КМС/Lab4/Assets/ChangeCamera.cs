@@ -19,13 +19,12 @@ namespace Assets
     
     private void Update()
     {
-      if (Input.GetKeyDown(KeyCode.Q))
-      {
-        camera1.enabled = !camera1.enabled;
-        camera2.enabled = !camera2.enabled;
+      if (!Input.GetKeyDown(KeyCode.Q)) return;
+      
+       camera1.enabled = !camera1.enabled;
+       camera2.enabled = !camera2.enabled;
 
-        Camera.SetupCurrent(camera1.enabled ? camera1 : camera2);
-      }
+       Camera.SetupCurrent(camera1.enabled ? camera1 : camera2);
     }
   }
 }

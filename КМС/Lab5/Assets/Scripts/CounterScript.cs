@@ -16,11 +16,10 @@ namespace Assets.Scripts
 
     void OnTriggerEnter(Collider other)
     {
-      if (other.gameObject == player)
-      {
-        _counter++;
-        counterText.text = _counter.ToString();
-      }
+      if (other.gameObject != player) return;
+      
+      _counter++;
+      counterText.text = _counter.ToString();
     }
   }
 }
