@@ -148,7 +148,8 @@ EXCEPTION
     DBMS_OUTPUT.PUT_LINE('Ошибка: ' || SQLCODE || ' ' || SQLERRM);
 end;
 
--- 3. Разработайте АБ, демонстрирующий работу конструкции WHEN TO_MANY_ROWS секции исключений для диагностирования неточной выборки.
+-- 3. Разработайте АБ, демонстрирующий работу конструкции WHEN TO_MANY_ROWS секции
+-- исключений для диагностирования неточной выборки.
 
 DECLARE
   v_AUDITORIUM          AUDITORIUM.AUDITORIUM%TYPE;
@@ -261,7 +262,8 @@ EXCEPTION
     ROLLBACK;
 end;
 
--- 8. Продемонстрируйте оператор INSERT, вызывающий нарушение целостности в базе данных. Обработайте возникшее исключение.
+-- 8. Продемонстрируйте оператор INSERT, вызывающий нарушение целостности в базе данных.
+-- Обработайте возникшее исключение.
 
 DECLARE
 BEGIN
@@ -301,7 +303,8 @@ BEGIN
   ROLLBACK;
 end;
 
--- 10. Продемонстрируйте оператор DELETE, вызывающий нарушение целостности в базе данных. Обработайте возникшее исключение.
+-- 10. Продемонстрируйте оператор DELETE, вызывающий нарушение целостности в базе данных.
+-- Обработайте возникшее исключение.
 
 insert into AUDITORIUM (AUDITORIUM, AUDITORIUM_NAME, AUDITORIUM_CAPACITY, AUDITORIUM_TYPE)
 values ('A1_3', 'Аудитория 1', 100, 'Lecture');
@@ -408,24 +411,73 @@ DECLARE
   v_AUDITORIUM          AUDITORIUM.AUDITORIUM%TYPE;
   v_AUDITORIUM_NAME     AUDITORIUM.AUDITORIUM_NAME%TYPE;
   v_AUDITORIUM_CAPACITY AUDITORIUM.AUDITORIUM_CAPACITY%TYPE;
+  isFirst20 boolean := true;
+  isFirst30 boolean := true;
+  isFirst60 boolean := true;
+  isFirst80 boolean := true;
+  isFirstFull boolean := true;
   CURSOR c_AUDITORIUM IS
     SELECT AUDITORIUM,
            AUDITORIUM_NAME,
            AUDITORIUM_CAPACITY
-    FROM AUDITORIUM;
+    FROM AUDITORIUM
+    ORDER BY AUDITORIUM_CAPACITY;
 BEGIN
   OPEN c_AUDITORIUM;
   LOOP
     FETCH c_AUDITORIUM INTO v_AUDITORIUM, v_AUDITORIUM_NAME, v_AUDITORIUM_CAPACITY;
     EXIT WHEN c_AUDITORIUM%NOTFOUND;
     IF v_AUDITORIUM_CAPACITY >= 0 and v_AUDITORIUM_CAPACITY <= 20 THEN
+      IF isFirst20 then
+        DBMS_OUTPUT.PUT_LINE('------------------ 0 > 20 ----------------');
+        isFirst20 := false;
+      end if;
       DBMS_OUTPUT.PUT_LINE('AUDITORIUM: ' || v_AUDITORIUM || ', AUDITORIUM_NAME: ' || v_AUDITORIUM_NAME ||
                            ', AUDITORIUM_CAPACITY: ' || v_AUDITORIUM_CAPACITY);
     END IF;
+
+    IF v_AUDITORIUM_CAPACITY >= 21 and v_AUDITORIUM_CAPACITY <= 30 THEN
+      IF isFirst30 then
+        DBMS_OUTPUT.PUT_LINE('------------------ 21 > 30  ----------------');
+        isFirst30 := false;
+      end if;
+      DBMS_OUTPUT.PUT_LINE('AUDITORIUM: ' || v_AUDITORIUM || ', AUDITORIUM_NAME: ' || v_AUDITORIUM_NAME ||
+                           ', AUDITORIUM_CAPACITY: ' || v_AUDITORIUM_CAPACITY);
+    END IF;
+
+    IF v_AUDITORIUM_CAPACITY >= 31 and v_AUDITORIUM_CAPACITY <= 60 THEN
+      IF isFirst60 then
+        DBMS_OUTPUT.PUT_LINE('------------------ 31 > 60 ----------------');
+        isFirst60 := false;
+      end if;
+      DBMS_OUTPUT.PUT_LINE('AUDITORIUM: ' || v_AUDITORIUM || ', AUDITORIUM_NAME: ' || v_AUDITORIUM_NAME ||
+                           ', AUDITORIUM_CAPACITY: ' || v_AUDITORIUM_CAPACITY);
+    END IF;
+
+    IF v_AUDITORIUM_CAPACITY >= 61 and v_AUDITORIUM_CAPACITY <= 80 THEN
+      IF isFirst80 then
+        DBMS_OUTPUT.PUT_LINE('------------------ 61 > 80 ----------------');
+        isFirst80 := false;
+      end if;
+      DBMS_OUTPUT.PUT_LINE('AUDITORIUM: ' || v_AUDITORIUM || ', AUDITORIUM_NAME: ' || v_AUDITORIUM_NAME ||
+                           ', AUDITORIUM_CAPACITY: ' || v_AUDITORIUM_CAPACITY);
+    END IF;
+
+    IF v_AUDITORIUM_CAPACITY >= 81 THEN
+      IF isFirstFull then
+        DBMS_OUTPUT.PUT_LINE('------------------ > 81 ----------------');
+        isFirstFull := false;
+      end if;
+      DBMS_OUTPUT.PUT_LINE('AUDITORIUM: ' || v_AUDITORIUM || ', AUDITORIUM_NAME: ' || v_AUDITORIUM_NAME ||
+                           ', AUDITORIUM_CAPACITY: ' || v_AUDITORIUM_CAPACITY);
+    END IF;
+
+
+
   END LOOP;
 
   CLOSE c_AUDITORIUM;
-end;
+end; --ППППППППППППППППП
 
 -- 15. Создайте AБ. Объявите курсорную переменную с помощью системного типа refcursor.
 -- Продемонстрируйте ее применение для курсора c параметрами.
