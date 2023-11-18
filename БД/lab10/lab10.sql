@@ -116,13 +116,17 @@ end;
 select *
 from TEACHER;
 
+select * from PULPIT;
+
 select *
 from FACULTY;
 insert into PULPIT (PULPIT, PULPIT_NAME, FACULTY)
-VALUES ('P003', 'Экономическая теоритическая кафедра', 'F004');
+VALUES ('P003', 'Экономическая супер кафедра', 'F004');
 insert into TEACHER (TEACHER, TEACHER_NAME, PULPIT, BIRTHDAY, SALARY)
-VALUES ('T019', 'Дубовик Григорий Григорьевич', 'P003', TO_TIMESTAMP('2004-01-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'),
-        300);
+VALUES ('T027', 'Смелов Григорий Григорьевич', 'P003', TO_TIMESTAMP('2004-01-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'),
+        100);
+
+select * from TEACHER where PULPIT = 'P003';
 
 declare
   cursor c1 is
@@ -134,8 +138,8 @@ declare
                             join PULPIT P2 on T2.PULPIT = P2.PULPIT and F.FACULTY = P2.FACULTY) as avg_faculty_salary,
                     (select avg(T3.SALARY) from TEACHER T3)                                     as avg_all_salary
     from TEACHER
-           join GDV.PULPIT P on P.PULPIT = TEACHER.PULPIT
-           join GDV.FACULTY F on F.FACULTY = P.FACULTY;
+           join PULPIT P on P.PULPIT = TEACHER.PULPIT
+           join FACULTY F on F.FACULTY = P.FACULTY;
 begin
   for i in c1
     loop
