@@ -113,15 +113,35 @@ end;
 -- 7. Создать курсор и вывести среднюю заработную плату по кафедрам с округлением вниз до целых,
 -- вывести средние итоговые значения для каждого факультета и для всех факультетов в целом.
 
+select *
+from TEACHER;
+
+select *
+from FACULTY;
+insert into PULPIT (PULPIT, PULPIT_NAME, FACULTY)
+VALUES ('P003', 'Экономическая теоритическая кафедра', 'F004');
+insert into TEACHER (TEACHER, TEACHER_NAME, PULPIT, BIRTHDAY, SALARY)
+VALUES ('T019', 'Дубовик Григорий Григорьевич', 'P003', TO_TIMESTAMP('2004-01-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'),
+        300);
+
 declare
   cursor c1 is
-    select PULPIT.PULPIT_NAME                                                               as pulpit,
-           (select round(avg(salary), 0) from TEACHER where TEACHER.PULPIT = PULPIT.PULPIT) as avg_salary
-    from PULPIT;
+    select distinct P.PULPIT,
+                    F.FACULTY,
+                    (select avg(T1.SALARY) from TEACHER T1 where T1.PULPIT = P.PULPIT)          as avg_pulpit_salary,
+                    (select avg(T2.SALARY)
+                     from TEACHER T2
+                            join PULPIT P2 on T2.PULPIT = P2.PULPIT and F.FACULTY = P2.FACULTY) as avg_faculty_salary,
+                    (select avg(T3.SALARY) from TEACHER T3)                                     as avg_all_salary
+    from TEACHER
+           join GDV.PULPIT P on P.PULPIT = TEACHER.PULPIT
+           join GDV.FACULTY F on F.FACULTY = P.FACULTY;
 begin
   for i in c1
     loop
-      dbms_output.put_line(i.pulpit || ' ' || i.avg_salary);
+      DBMS_OUTPUT.PUT_LINE('Faculty: ' || i.FACULTY || ' | Pulpit: ' || i.PULPIT || ' | Avg pulpit: ' ||
+                           round(i.avg_pulpit_salary, 0) || ' | Avg faculty: ' || round(i.avg_faculty_salary, 0) ||
+                           ' | Avg all faculty: ' || round(i.avg_all_salary, 0));
     end loop;
 end;
 
@@ -130,7 +150,6 @@ end;
 
 declare
   teacher_rec teacher%rowtype;
-  -- свой тип рекорд
   type teacher_rec_type is record
                            (
                              teacher varchar(100),

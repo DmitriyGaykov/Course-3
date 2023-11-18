@@ -1,0 +1,32 @@
+<script src="/utils/socket.io-client-main/dist/socket.io.min.js"></script>
+
+<h1>08-01</h1>
+<button onclick="onStartWs()">startWS</button>
+
+<script>
+  const socket = io('ws://localhost:4000');
+  let i = 0;
+  let intervalHandle = null;
+
+  function onStartWs() {
+    intervalHandle = stopInterval(intervalHandle);
+
+    intervalHandle = setInterval(() => {
+      socket.send(`08-01-client: ${++i}`);
+    }, 3000);
+
+    setTimeout(() => {
+      stopInterval();
+      socket.disconnect();
+    }, 25000);
+  }
+
+  function stopInterval(handle) {
+    if(!handle) return handle;
+
+    clearInterval(handle);
+    return null;
+  }
+
+  socket.on('message', alert);
+</script>

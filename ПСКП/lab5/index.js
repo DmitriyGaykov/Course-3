@@ -1,6 +1,6 @@
 import { createServer } from 'http';
 import * as fs from 'fs';
-import {send} from "m06_gdv";
+import {send} from "./m06_gdv/index.js";
 import {config} from 'dotenv';
 
 config();
@@ -39,7 +39,7 @@ const app = createServer(async (req, res) => {
                             throw 'Provide message';
 
                         if(true) {
-                            const result = await send(recipient, sender, 'rnlajcdowwafibkh', message);
+                            const result = await send(recipient, sender, 'avjqgedzcfqkrmzg', message);
 
                             res.writeHead(result ? 201 : 400, {
                                 'Content-Type': 'text/plain'

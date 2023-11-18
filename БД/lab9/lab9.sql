@@ -98,6 +98,8 @@ INSERT INTO TEACHER (TEACHER, TEACHER_NAME, PULPIT)
 VALUES ('T002', 'Петров Петр Петрович', 'P001');
 INSERT INTO TEACHER (TEACHER, TEACHER_NAME, PULPIT)
 VALUES ('T003', 'Сидорова Екатерина Владимировна', 'P001');
+INSERT INTO TEACHER (TEACHER, TEACHER_NAME, PULPIT)
+VALUES ('T004', 'Смирнова Анна Александровна', 'P001');
 -- ...
 
 -- Заполняем таблицу SUBJECT
