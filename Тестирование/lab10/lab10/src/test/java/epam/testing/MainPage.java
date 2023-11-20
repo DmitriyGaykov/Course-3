@@ -13,6 +13,9 @@ public class MainPage {
   @FindBy(xpath = "//*[@id=\"top\"]/ul/li[2]/div/div")
   private WebElement searchButton;
 
+  @FindBy(xpath = "//*[@id=\"top\"]/ul/li[1]/a")
+  private WebElement menuElement;
+
   public MainPage(WebDriver driver) {
     this.driver = driver;
     PageFactory.initElements(driver, this);
@@ -25,5 +28,9 @@ public class MainPage {
   public void search(String text) {
     searchInput.sendKeys(text);
     searchButton.click();
+  }
+
+  public void clickOnMenuElement() {
+    menuElement.click();
   }
 }
