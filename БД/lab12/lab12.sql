@@ -1,48 +1,3 @@
-create table AUDITORIUM_TYPE
-(
-  AUDITORIUM_TYPE     varchar(20) primary key,
-  AUDIOTRIUM_TYPENAME varchar(100) unique
-);
-
-create table AUDITORIUM
-(
-  AUDITORIUM          varchar(20) primary key,
-  AUDITORIUM_NAME     varchar(100) unique,
-  AUDITORIUM_CAPACITY int,
-  AUDITORIUM_TYPE     varchar(20),
-  foreign key (AUDITORIUM_TYPE) references AUDITORIUM_TYPE (AUDITORIUM_TYPE)
-);
-
-create table FACULTY
-(
-  FACULTY      varchar(20) primary key,
-  FACULTY_NAME varchar(100) unique
-);
-
-create table PULPIT
-(
-  PULPIT      varchar(20) primary key,
-  PULPIT_NAME varchar(100) unique,
-  FACULTY     varchar(20),
-  foreign key (FACULTY) references FACULTY (FACULTY)
-);
-
-create table TEACHER
-(
-  TEACHER      varchar(20) primary key,
-  TEACHER_NAME varchar(100) unique,
-  PULPIT       varchar(20),
-  foreign key (PULPIT) references PULPIT (PULPIT)
-);
-
-create table SUBJECT
-(
-  SUBJECT      varchar(20) primary key,
-  SUBJECT_NAME varchar(100) unique,
-  PULPIT       varchar(20),
-  foreign key (PULPIT) references PULPIT (PULPIT)
-);
-
 -- 1.	Создайте таблицу, имеющую несколько атрибутов, один из которых первичный ключ.
 
 create table STUDENT
@@ -76,6 +31,7 @@ values ('S009', 'Григорыч Дарья Сергеевна', 'P002');
 insert into STUDENT
 values ('S010', 'Кузнецова Анна Викторовна', 'P002');
 
+select * from STUDENT;
 
 -- 3.	Создайте BEFORE – триггер уровня оператора на события INSERT, DELETE и UPDATE.
 
@@ -221,7 +177,6 @@ from AUDIT_LOG;
 -- запрещающий удаление исходной таблицы.
 
 drop table STUDENT;
-drop table TEACHER;
 
 flashback table TEACHER to before drop;
 
