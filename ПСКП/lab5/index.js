@@ -39,7 +39,7 @@ const app = createServer(async (req, res) => {
                             throw 'Provide message';
 
                         if(true) {
-                            const result = await send(recipient, sender, 'avjqgedzcfqkrmzg', message);
+                            const result = await send(recipient, sender,, message);
 
                             res.writeHead(result ? 201 : 400, {
                                 'Content-Type': 'text/plain'
