@@ -1,0 +1,24 @@
+{
+  "name": "lab10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "ex1": "nodemon ex10-01.js",
+    "ex1a": "nodemon ex10-01a.js",
+    "ex2": "nodemon ex10-02.js",
+    "ex2a": "nodemon ex10-02a.js",
+    "ex3": "nodemon ex10-03.js",
+    "ex3a": "nodemon ex10-03a.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "net": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

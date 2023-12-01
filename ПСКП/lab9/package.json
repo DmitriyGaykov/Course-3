@@ -1,0 +1,36 @@
+{
+  "name": "lab9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "ex1": "node ex09-01.js",
+    "ex1a": "node ex09-01a.js",
+    "ex2": "node ex09-02.js",
+    "ex2a": "node ex09-02a.js",
+    "ex3": "node ex09-03.js",
+    "ex3a": "node ex09-03a.js",
+    "ex4": "node ex09-04.js",
+    "ex4a": "node ex09-04a.js",
+    "ex5": "node ex09-05.js",
+    "ex5a": "node ex09-05a.js",
+    "ex5b": "node ex09-05b.js",
+    "ex5c": "node ex09-05c.js",
+    "ex6": "node ex09-06.js",
+    "ex6abc": "node ex09-06abc.js",
+    "ex7": "node ex09-07.js",
+    "ex7a": "node ex09-07a.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.5",
+    "express": "^4.18.2",
+    "rpc-websockets": "^7.8.0",
+    "socket-io": "^1.0.0",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
+  }
+}

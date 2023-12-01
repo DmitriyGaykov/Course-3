@@ -1,0 +1,4 @@
+﻿  Server.cpp
+D:\Course3\ПСКП\lab10\ex10-01\ServerU\Server.cpp(15,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\Course3\ПСКП\lab10\ex10-01\ServerU\Server.cpp(50,44): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  ServerU.vcxproj -> D:\Course3\ПСКП\lab10\ex10-01\x64\Debug\ServerU.exe
