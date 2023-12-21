@@ -1,0 +1,56 @@
+/*
+    css variables
+ */
+
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+:root {
+    --bg-color: #11ff1121;
+    --primary-color: #33aa22;
+    --secondary-color: #22aa33;
+    --secondary-color-hover: #00aa88;
+    --tertiary-color: #44ff33;
+    --light-color: #aaffdd;
+}
+
+.bg-color {
+    background-color: var(--bg-color) !important;
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+}
+
+button.primary-color:hover {
+    background-color: var(--secondary-color-hover);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color) !important;
+}
+
+.tertiary-color {
+    background-color: var(--tertiary-color) !important;
+}
+
+.light-color {
+    background-color: var(--light-color) !important;
+}
+
+
+.product:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.product-link {
+    color: #000 !important;
+    text-decoration: none
+}
+
+.height-width-30 {
+    height: 30px;
+    width: 30px;
+}

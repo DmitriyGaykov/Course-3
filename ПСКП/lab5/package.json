@@ -5,10 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "concurrently \"nodemon index.js\" \"explorer http://localhost:5000/api\""
+    "start": "concurrently \"nodemon index.js\" \"explorer http://localhost:5000/api/emails\""
   },
   "dependencies": {
     "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "m06_gdv": "^1.0.1",
     "nodemailer": "6.9.6"
   },
   "keywords": [],

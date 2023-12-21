@@ -8,8 +8,6 @@ export class DB {
     return DB.db;
   }
   
-  sql = null;
-  
   constructor() {
     const config = {
       user: 'sa',
@@ -31,7 +29,7 @@ export class DB {
   
   async connect(config) {
     await Sql.connect(config);
-    this.sql = Sql;
+    
     this.faculties = new Faculty(Sql);
     this.pulpits = new Pulpits(Sql);
     this.subjects = new Subjects(Sql);
